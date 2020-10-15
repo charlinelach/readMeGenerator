@@ -21,22 +21,30 @@ const questions = [
         type: "input",
         name: "description",
         message: "Describe your repository/project."
-    },{
+    }, {
         type: "input",
         name: "deploy",
         message: "What is your deployment link?"
-    },{
+    }, {
         type: "input",
         name: "repo",
         message: "What is your repository link?"
-    },{
+    }, {
         type: "input",
         name: "installation",
         message: "Provide installation instructions (step-by-step), if applicable."
     }, {
         type: "input",
         name: "usage",
-        message: "Provide usage instructions and examples for use."
+        message: "What do users do for usage?"
+    }, {
+        type: "input",
+        name: "example",
+        message: "Provide the location of a screenshot/example."
+    }, {
+        type: "input",
+        name: "altName",
+        message: "What would it's alt text be?"
     }, {
         type: "input",
         name: "contributors",
@@ -65,7 +73,7 @@ function init() {
     gather.prompt(questions)
         .then((inquirerResponses) => {
             console.log("Producing your README...");
-            writeToFile("README.md", layout({ ...inquirerResponses }));
+            writeToFile("README.md", layout({...inquirerResponses}));
         })
 }
 

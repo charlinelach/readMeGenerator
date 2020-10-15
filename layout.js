@@ -11,18 +11,18 @@ function licenseType(license) {
 }
 
 function layout(data) {
-    return `# ${data.title}`
+    return `# ${data.title}
 
-// licenseType(data.license);
+licenseType(data.license);
 
 ## Description
 ${data.description}
 
-\`\`\`
+<br>
 Deployed at: ${data.deploy}
-\`\`\`
+<br>
 Repository: ${data.repo}
-\`\`\`
+
 
 ## Table of Contents
 * [Installation](#installation)
@@ -40,17 +40,20 @@ Repository: ${data.repo}
 For installation, please complete the following:
 
 ##[Usage]
-
-![Screenshot/video](location)
+To utilize the application, users ${data.usage}
+![${altName}](${example})
 
 ##[Contributors]
+The following contributors have helped me today: ${data.contributors}
 
 ##[Testing]
+For this repository the following testing has been done: ${test}
 
 ##[License]
+This project is licensed under the ${license} license.
 
 ##[Questions]
-If you have further questions, open an issue or email me at ${data.email}.
+If you have further questions, email me at ${data.email} or ${data.questions}.
 `;
 }
 
