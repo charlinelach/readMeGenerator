@@ -1,15 +1,13 @@
-# fda
+# README Generator
 
-licenseType(data.license);
 
 ## Description
-fda
+The purpose of this is to test
 
 ```
-Deployed at: fda
+Deployed at:     if (license == "MIT") {
+Repository:         return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
 ```
-Repository: fda
-
 
 ## Table of Contents
 * [Installation](#installation)
@@ -20,28 +18,28 @@ Repository: fda
 * [Questions](#questions)
 
 
-#[Deployment]
+# Deployment
 
-##[Installation]
+## Installation
 
 For installation, please complete the following:
 
-##[Usage]
-To utilize the application, users fd
-```
-![fdas](afda)
+## Usage
+To utilize the application, users not sure
 
-##[Contributors]
-The following contributors have helped me today: fd
+![NA](NA)
 
-##[Testing]
-For this repository the follodawing testing has been done: afds
+## Contributors
+The following contributors have helped me today: NA
 
-##[License]
-This project is licensed under the GNU GPLv3 license.
+## Testing
+For this repository the follodawing testing has been done: NA
 
-##[Questions]
+## License
+This project is licensed under the NONE license.
+
+## Questions
 If you have further questions: <br>
-* View my GitHub: [fdsa](https://github.com/fdsa/)
-* Email me at fda
-* Or fdsa
+* View my GitHub: [charlinelach](https://github.com/charlinelach/)
+* Email me at fake@email.com
+* Or mail

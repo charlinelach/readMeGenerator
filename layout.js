@@ -13,7 +13,6 @@ function licenseType(license) {
 function layout(data) {
     return `# ${data.title}
 
-licenseType();
 
 ## Description
 ${data.description}
