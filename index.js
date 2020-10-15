@@ -1,8 +1,7 @@
-
 const fs = require("fs");
 const path = require("path");
 const inquirer = require("inquirer");
-const layout = require("./layout");
+const layout = require("/layout");
 
 const questions = [
     {
