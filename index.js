@@ -1,8 +1,8 @@
 
 const fs = require("fs");
 const path = require("path");
-const gather = require("gather");
-const layout = require("./node_modules/layout");
+const inquirer = require("inquirer");
+const layout = require("./layout");
 
 const questions = [
     {
@@ -55,9 +55,9 @@ function writeToFile(fileName, data) {
 
 function init() {
     gather.prompt(questions)
-        .then((gatherResponses) => {
-            console.log("Generating README...");
-            writeToFile("README.md", layout({ ...gatherResponses }));
+        .then((inquirerResponses) => {
+            console.log("Producing your README...");
+            writeToFile("README.md", layout({ ...inquirerResponses }));
         })
 }
 
