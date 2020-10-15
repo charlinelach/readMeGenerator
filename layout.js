@@ -36,6 +36,9 @@ Repository: ${data.repo}
 ## Installation
 
 For installation, please complete the following:
+\`\`\`
+${data.installation}
+\`\`\`
 
 ## Usage
 To utilize the application, users ${data.usage}
