@@ -70,7 +70,7 @@ function writeToFile(fileName, data) {
 }
 
 function init() {
-    gather.prompt(questions)
+    inquirer.prompt(questions)
         .then((inquirerResponses) => {
             console.log("Producing your README...");
             writeToFile("README.md", layout({...inquirerResponses}));

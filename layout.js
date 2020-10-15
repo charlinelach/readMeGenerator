@@ -5,7 +5,7 @@ function licenseType(license) {
         return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
     } else if (license == "Apache 2.0") {
         return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
-    } else (license == "NONE") {
+    } else if (license == "NONE") {
         return ``
     }
 }
@@ -41,6 +41,7 @@ For installation, please complete the following:
 
 ##[Usage]
 To utilize the application, users ${data.usage}
+<br>
 ![${altName}](${example})
 
 ##[Contributors]
