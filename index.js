@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const inquirer = require("inquirer");
-const layout = require("/layout");
+const layout = require("./layout");
 
 const questions = [
     {
@@ -35,15 +35,15 @@ const questions = [
     }, {
         type: "input",
         name: "usage",
-        message: "What do users do for usage?"
+        message: "What is utilization?"
     }, {
         type: "input",
         name: "example",
-        message: "Provide the location of a screenshot/example."
+        message: "Provide the location of a screenshot/example, if applicable."
     }, {
         type: "input",
-        name: "altName",
-        message: "What would it's alt text be?"
+        name: "wrongName",
+        message: "What would it's alt text be (if applicable)?"
     }, {
         type: "input",
         name: "contributors",

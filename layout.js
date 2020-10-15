@@ -18,9 +18,9 @@ licenseType(data.license);
 ## Description
 ${data.description}
 
-<br>
+\`\`\`
 Deployed at: ${data.deploy}
-<br>
+\`\`\`
 Repository: ${data.repo}
 
 
@@ -41,8 +41,8 @@ For installation, please complete the following:
 
 ##[Usage]
 To utilize the application, users ${data.usage}
-<br>
-![${altName}](${example})
+\`\`\`
+![${data.wrongName}](${data.example})
 
 ##[Contributors]
 The following contributors have helped me today: ${data.contributors}
