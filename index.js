@@ -21,7 +21,15 @@ const questions = [
         type: "input",
         name: "description",
         message: "Describe your repository/project."
-    }, {
+    },{
+        type: "input",
+        name: "deploy",
+        message: "What is your deployment link?"
+    },{
+        type: "input",
+        name: "repo",
+        message: "What is your repository link?"
+    },{
         type: "input",
         name: "installation",
         message: "Provide installation instructions (step-by-step), if applicable."
@@ -41,7 +49,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "Does your project have any of the following applicable licenses?",
-        choices: ["NONE", "MIT", "GNU GPLv3", "Apache 2.0", "The Unlicense"]
+        choices: ["NONE", "MIT", "GNU GPLv3", "Apache 2.0"]
     }, {
         type: "input",
         name: "questions",

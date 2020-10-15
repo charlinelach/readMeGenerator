@@ -1,24 +1,30 @@
 function licenseType(license) {
     if (license == "MIT") {
-        return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+        return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
     } else if (license == "GNU GPLv3") {
-        return '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
+        return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
     } else if (license == "Apache 2.0") {
-        return '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
+        return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
     } else (license == "NONE") {
-        return ''
+        return ``
     }
 }
 
+function layout(data) {
+    return `# ${data.title}`
 
+// licenseType(data.license);
 
-#[Title]
+## Description
+${data.description}
 
-##[Description]
+\`\`\`
+Deployed at: ${data.deploy}
+\`\`\`
+Repository: ${data.repo}
+\`\`\`
 
-##[Latest Update]: ``
-
-#[Table of Contents]
+## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contributors](#contributors)
@@ -26,9 +32,12 @@ function licenseType(license) {
 * [License](#license)
 * [Questions](#questions)
 
+
 #[Deployment]
 
 ##[Installation]
+
+For installation, please complete the following:
 
 ##[Usage]
 
@@ -41,3 +50,8 @@ function licenseType(license) {
 ##[License]
 
 ##[Questions]
+If you have further questions, open an issue or email me at ${data.email}.
+`;
+}
+
+module.exports = layout;
