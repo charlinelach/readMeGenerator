@@ -23,15 +23,18 @@ const questions = [
     }, {
         type: "input",
         name: "deploy",
-        message: "What is your deployment link?"
+        message: "What is your deployment link?",
+        default: "NA"
     }, {
         type: "input",
         name: "repo",
-        message: "What is your repository link?"
+        message: "What is your repository link?",
+        default: "NA"
     }, {
         type: "input",
         name: "installation",
-        message: "Provide installation instructions (step-by-step), if applicable."
+        message: "Provide installation instructions (step-by-step).",
+        default: "NA"
     }, {
         type: "input",
         name: "usage",
@@ -39,23 +42,27 @@ const questions = [
     }, {
         type: "input",
         name: "example",
-        message: "Provide the location of a screenshot/example, if applicable."
+        message: "Provide the location of a screenshot/example.",
+        default: "NA"
     }, {
         type: "input",
         name: "wrongName",
-        message: "What would it's alt text be (if applicable)?"
+        message: "What would its alt text be?",
+        default: "NA"
     }, {
         type: "input",
         name: "contributors",
-        message: "Provide the names of any contributors, if applicable."
+        message: "Provide the names of any contributors.",
+        default: "NA"
     }, {
         type: "input",
         name: "test",
-        message: "If applicable, provide any tests completed for the application."
+        message: "Provide any tests completed for the application.",
+        default: "NA"
     }, {
         type: "list",
         name: "license",
-        message: "Does your project have any of the following applicable licenses?",
+        message: "Which license is a fit with your project?",
         choices: ["NONE", "MIT", "GNU GPLv3", "Apache 2.0"]
     }, {
         type: "input",
@@ -73,6 +80,7 @@ function init() {
         .then((inquirerResponses) => {
             console.log("Producing your README...");
             writeToFile("README.md", layout({...inquirerResponses}));
+            console.log("README complete!")
         })
 }
 

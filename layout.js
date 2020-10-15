@@ -13,16 +13,15 @@ function licenseType(license) {
 function layout(data) {
     return `# ${data.title}
 
-licenseType(data.license);
+licenseType();
 
 ## Description
 ${data.description}
 
 \`\`\`
 Deployed at: ${data.deploy}
-\`\`\`
 Repository: ${data.repo}
-
+\`\`\`
 
 ## Table of Contents
 * [Installation](#installation)
@@ -33,27 +32,27 @@ Repository: ${data.repo}
 * [Questions](#questions)
 
 
-#[Deployment]
+# Deployment
 
-##[Installation]
+## Installation
 
 For installation, please complete the following:
 
-##[Usage]
+## Usage
 To utilize the application, users ${data.usage}
-\`\`\`
+
 ![${data.wrongName}](${data.example})
 
-##[Contributors]
+## Contributors
 The following contributors have helped me today: ${data.contributors}
 
-##[Testing]
-For this repository the following testing has been done: ${test}
+## Testing
+For this repository the follodawing testing has been done: ${data.test}
 
-##[License]
-This project is licensed under the ${license} license.
+## License
+This project is licensed under the ${data.license} license.
 
-##[Questions]
+## Questions
 If you have further questions: <br>
 * View my GitHub: [${data.gitHub}](https://github.com/${data.gitHub}/)
 * Email me at ${data.email}
