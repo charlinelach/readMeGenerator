@@ -7,7 +7,7 @@ const layout = require("./layout");
 const questions = [
     {
         type: "input",
-        name: "userInput",
+        name: "gitHub",
         message: "What is your username on GitHub?"
     }, {
         type: "input",

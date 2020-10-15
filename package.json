@@ -1,0 +1,19 @@
+{
+  "name": "readmegenerator",
+  "version": "1.0.0",
+  "description": "Assignment 09 for a README Generator with NODE.js and ES6+",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlinelach/readMeGenerator.git"
+  },
+  "author": "Charline Lach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charlinelach/readMeGenerator/issues"
+  },
+  "homepage": "https://github.com/charlinelach/readMeGenerator#readme"
+}

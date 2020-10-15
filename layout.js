@@ -54,7 +54,10 @@ For this repository the following testing has been done: ${test}
 This project is licensed under the ${license} license.
 
 ##[Questions]
-If you have further questions, email me at ${data.email} or ${data.questions}.
+If you have further questions: <br>
+* View my GitHub: [${data.gitHub}](https://github.com/${data.gitHub}/)
+* Email me at ${data.email}
+* Or ${data.questions}
 `;
 }
 
